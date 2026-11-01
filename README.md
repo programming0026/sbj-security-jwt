@@ -52,7 +52,8 @@ src/main/java/com/juniverse/jwt/
 │   ├── JwtProperties.java             # app.jwt.*
 │   └── ProblemSecurityHandlers.java   # 401 y 403 en JSON
 ├── token/
-│   ├── TokenService.java              # login, refresh, validate, logout y emisión de tokens
+│   ├── TokenService.java              # contrato: login, refresh, validate, logout y emisión de tokens
+│   ├── JwtTokenService.java           # implementación con Spring Security y JWT
 │   ├── RefreshTokenStore.java         # un solo uso + familias
 │   └── RevokedTokens.java             # lista negra de tokens de acceso
 ├── controller/                        # AuthController y ResourceController

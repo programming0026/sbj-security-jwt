@@ -26,12 +26,6 @@ public class RevokedTokens {
         revoked.put(jti, expiresAt);
     }
 
-    /**
-     * Indica si un token fue revocado.
-     *
-     * @param jti identificador del token
-     * @return {@code true} si está en la lista negra
-     */
     public boolean isRevoked(String jti) {
         return jti != null && revoked.containsKey(jti);
     }
